@@ -1,0 +1,397 @@
+
+/*This section contains general styling for the body and classes to style content*/
+
+body {
+  background-color: #ffbace;
+  font-family: Verdana, sans-serif;
+}
+
+.content {
+  color: #96032a;
+  font-size: 18px;
+  margin-left: 50px;
+  margin-right: 50px;
+  line-height: 35px;
+}
+
+.emphasis {
+  font-weight: bold;
+  color: #de003a;
+}
+
+/*This section contains styling for the different headings*/
+
+h1.home {
+  text-align: center;
+  font-size: 35px;
+  margin-top: 60px;
+
+  /*I layered multiple text shadows to create text with an outline*/
+  text-shadow: 0 0 6px #0331A8, 0 0 6px #0331A8, 0 0 6px #0331A8, 0 0 6px #0331A8,
+  0 0 6px #0331A8, 0 0 6px #0331A8, 0 0 6px #0331A8, 0 0 6px #0331A8, 0 0 6px #0331A8;
+
+  color: #FFE43E;
+}
+
+h1.paragraph {
+  font-size: 35px;
+  margin-top: 65px;
+  margin-left: 50px;
+  margin-bottom: 45px;
+  color: #de003a;
+}
+
+h2.subheading {
+  font-size: 28px;
+  margin-left: 50px;
+  margin-bottom: 35px;
+  margin-top: 55px;
+  color: #ff4275;
+}
+
+/*This section contains styling for the address section at the bottom of the page*/
+
+address {
+  color: #de003a;
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-left: 85px;
+  margin-right: 60px;
+  line-height: 35px;
+}
+
+ul.star {
+  list-style-image: url('star4.png')
+}
+
+/*This section contains different styling for various images throughout the website*/
+
+header img {
+  width: 100%;
+  margin-top: 20px;
+  display: block;
+}
+
+img.heading {
+  width: 100%;
+  display: block;
+}
+
+img.footer {
+  max-width: 100%;
+  min-width: 200px;
+  margin-bottom: 40px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+}
+
+img.standardImage {
+  width: 525px;
+  max-width: 95%;
+  border-radius: 25px;
+  border: 8px solid black;
+  border-color: #0331A8;
+
+}
+
+img.gameBoxHorizontal {
+  width: 450px;
+  max-width: 95%;
+  border-radius: 25px;
+  border: 8px solid black;
+  border-color: #0331A8;
+
+}
+
+img.gameBoxVertical {
+  width: 400px;
+  max-width: 95%;
+  border-radius: 25px;
+  border: 8px solid black;
+  border-color: #0331A8;
+
+}
+
+img.copyAbility {
+  width: 150px;
+  max-width: 95%;
+  margin-bottom: 20px;
+  display: block;
+}
+
+img.copyAbilityFire {
+  width: 115px;
+  max-width: 95%;
+  margin-bottom: 20px;
+  display: block;
+}
+
+img.copyAbilitySword {
+  width: 180px;
+  max-width: 95%;
+  margin-bottom: 20px;
+  display: block;
+}
+
+img.character {
+  width: 350px;
+  max-width: 95%;
+  margin-left: 50px;
+}
+
+img.characterKirby {
+  width: 270px;
+  max-width: 95%;
+  margin-left: 50px;
+}
+
+img.characterMetaKnight {
+  width: 440px;
+  max-width: 85%;
+  margin-left: 50px;
+}
+
+img.wide {
+  width: 800px;
+  max-width: 95%;
+  border-radius: 25px;
+  border: 8px solid black;
+  border-color: #0331A8;
+}
+
+/*This section contains styling for the figures in the website*/
+
+figcaption.setWidth {
+  max-width: 520px;
+}
+
+figure.leftWrap {
+  float: left;
+  display: block;
+  text-align: center;
+  font-style: italic;
+  font-size: smaller;
+  font-family: Verdana, sans-serif;
+  color: #96032a;
+  text-indent: 0;
+}
+
+figure.centerBlock {
+  margin-top: 30px;
+  display: block;
+  text-align: center;
+  font-style: italic;
+  font-size: smaller;
+  font-family: Verdana, sans-serif;
+  color: #96032a;
+  text-indent: 0;
+}
+
+figure.leftBlock {
+  display: inline-block;
+  margin-left: 45px;
+  text-align: center;
+  font-style: italic;
+  font-size: smaller;
+  font-family: Verdana, sans-serif;
+  color: #96032a;
+  text-indent: 0;
+}
+
+/*This section contains styling for the set of cafe images in the flexbox*/
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  margin-left: 35px;
+  margin-right: 35px;
+}
+
+.flexImage {
+  flex: 33.33%; 
+  width: 300px;
+  max-width: 95%; 
+  margin-right: 15px;
+  margin-left: 15px; 
+  border-radius: 25px;
+  border: 8px solid black;
+  border-color: #0331A8;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+/*This media query makes the flex images stack vertically if the window gets too narrow (responsive layout)*/
+@media (max-width: 1150px) {
+  .flex {
+    flex-direction: column;
+  }
+}
+
+/*This section contains the styling for the navigation bar*/
+
+nav.navbar {
+  width: 100%;
+  overflow: auto;
+  margin-top: 40px;
+  text-align: center;
+  /*white-space: nowrap;*/
+}
+
+nav.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: inline;
+}
+
+nav.navbar li {
+  display: inline;
+}
+
+nav.navbar li a {
+  padding: 13px 7px;
+  border-radius: 25px;
+  margin: 2px;
+  text-align: center;
+  font-size: 180%;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-decoration: none;
+  display: block;
+  width: 20%;
+  display: inline-block;
+}
+
+nav.navbar li a:link, a:visited {
+  background-color: #f20543;
+  color: white;
+}
+
+nav.navbar ul li a:hover, a:active {
+  background-color: #ff4f7e;
+  color: #ffe6ec;
+}
+
+/*This section contains styling for the links in the general content of the website*/
+
+a.normal:link {
+  color: #2051de;
+  font-weight: bold;
+}
+
+a.normal:visited {
+  color: #09217b;
+  font-weight: bold;
+}
+
+a.normal:hover {
+  color: #ff4275;
+  font-weight: bold;
+}
+
+a.normal:active {
+  color: #FFE43E;
+  font-weight: bold;
+}
+
+/*This section contains styling for the video at the bottom of the home page*/
+
+iframe.video {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 95%;
+  margin-top: 30px;
+}
+
+.videoCaption {
+  text-align: center;
+  width: 660px;
+  max-width: 95%;
+  color: #96032a;
+  font-size: 16px;
+  line-height: 35px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*This section contains styling for the elements on the 404 page*/
+
+h1.errorOutline {
+  text-align: center;
+  font-size: 42px;
+  margin-top: 60px;
+
+  text-shadow: 0 0 6px #0331A8, 0 0 6px #0331A8, 0 0 6px #0331A8, 0 0 6px #0331A8, 0 0 6px #0331A8, 0 0 6px #0331A8, 0 0 6px #0331A8, 0 0 6px #0331A8;
+
+  color: #FFE43E;
+}
+
+h1.errorHeader {
+  font-size: 35px;
+  margin-top: 45px;
+  text-align: center;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 45px;
+  color: #de003a;
+}
+
+.errorText {
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 70px;
+  width: 660px;
+  max-width: 93%;
+  color: #96032a;
+  font-size: 18px;
+  line-height: 35px;
+}
+
+.errorImage {
+  max-width: 85%;
+  margin-bottom: 40px;
+  margin-top: 40px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 340px;
+}
+
+/*This section contains styling for the table on the Video Games page*/
+
+table, th, td {
+  border: 4px solid black;
+  border-collapse: collapse;
+  border-color: #0331A8;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff2a2;
+} 
+
+table {
+  margin-top: 50px;
+}
+
+th {
+  color: #de003a;
+  font-size: 22px;
+}
+
+td {
+  color: #96032a;
+}
+
+th, td {
+  padding: 15px;
+  font-family: Verdana, sans-serif;
+}
